@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSetGo - Book An Appointment</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-div">
+        <a id="logo" href="#">Doc<span>SetGo</span></a>
+        <ul>
+          <li><a class="hover" href="./index.html">Home</a></li>
+          <li><a class="hover" href="./doc-online.html">DocOnline</a></li>
+          <li>
+            <a class="hover" href="./appointment.html">Book an Appointment</a>
+          </li>
+          <li>
+            <a class="hover" href="./clinic-registration.html"
+              >Register Your Clinic</a
+            >
+          </li>
+          <li><a class="hover" href="./blogs.html">Blogs</a></li>
+        </ul>
+        <div class="button">
+          <a href="./Sign-In.html"> <button class="nav-btn">Sign In</button></a>
+          <a href="./Sign-Up.html"
+            ><button class="nav-btn" id="button-up">Sign Up</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-appoint">
+      <section class="appointment-hero">
+        <h1>Book Your Doctor's Appointment Easily</h1>
+        <p>
+          Skip the waiting lines and schedule your visit with local doctors in
+          just a few clicks. DocSetGo helps you find the right specialist and
+          confirm your appointment with a convenience fee—quick, simple, and
+          hassle-free.
+        </p>
+      </section>
+      <section class="appointment-form">
+        <h1>Book Your Appointment</h1>
+        <form>
+          <label
+            >Full Name
+            <input type="text" name="fullName" required />
+          </label>
+
+          <label
+            >Email Address
+            <input type="email" name="email" required />
+          </label>
+
+          <label
+            >Phone Number
+            <input type="tel" name="phone" required />
+          </label>
+
+          <label style="margin-bottom: 10px"
+            >Select Specialization
+            <select
+              name="specialization"
+              style="margin-bottom: 10px; color: black"
+              required
+            >
+              <option value="">--Select--</option>
+              <option value="ENT">ENT</option>
+              <option value="General">General</option>
+              <option value="Dermatology">Dermatology</option>
+            </select>
+          </label>
+          <br />
+
+          <label
+            >Preferred Location
+            <input type="text" name="location" required />
+          </label>
+
+          <label
+            >Preferred Time Slot
+            <input type="time" name="timeSlot" required />
+          </label>
+
+          <label
+            >Appointment Date
+            <input type="date" name="appointmentDate" required />
+          </label>
+
+          <label>Brief Symptoms / Reason </label>
+          <br />
+          <textarea
+            style="width: 100%; margin-bottom: 10px"
+            name="symptoms"
+            required
+          ></textarea>
+          <br />
+          <label
+            >Upload Reports (Optional)
+            <input type="file" name="reports" />
+          </label>
+
+          <div style="display: flex; align-items: center; margin-bottom: 10px">
+            <input id="checkbox" type="checkbox" style="margin-right: 10px" />
+            <p
+              style="
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: black;
+              "
+            >
+              I agree to the service fee
+            </p>
+          </div>
+
+          <label
+            >Payment Method
+            <select name="paymentMethod" required style="color: black">
+              <option value="">--Select Payment Method--</option>
+              <option value="UPI">UPI</option>
+              <option value="CreditCard">Credit Card</option>
+              <option value="DebitCard">Debit Card</option>
+              <option value="Wallet">Wallet</option>
+            </select>
+          </label>
+          <br />
+
+          <div style="display: flex; justify-content: flex-end">
+            <button class="button-appoint" type="submit">
+              Confirm Appointment
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="up-foot">
+        <h4>Follow Us</h4>
+        <div class="foot-social">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./footer assets/fb.png" class="foot-img" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img
+              src="./footer assets/insta.png"
+              class="foot-img"
+              alt="Instagram"
+            />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img
+              src="./footer assets/linkedin.png"
+              class="foot-img"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img
+              src="./footer assets/twitter.png"
+              class="foot-img"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="down-foot">
+        <div class="foot-links">
+          <a href="">Terms and Policy</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">All Doctors</a>
+          <a href="">Cities</a>
+        </div>
+        <p>Copyrights @ DocSetGo Inc. All rights reserved since 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>
